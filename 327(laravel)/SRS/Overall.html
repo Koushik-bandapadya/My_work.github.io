@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Overall Description</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="wrapper">
+
+     <nav id="sidebar">
+
+       <div class="sidebar-header">
+        <a href="SRS.html"><h3>Home</h3></a>
+       </div>
+       <ul class="lisst-unstyled components">
+
+         <li class="active">
+           <a href="#srsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SRS</a>
+           <ul class="collapse list-unstyled" id="srsmenu">
+             <li>
+               <a href="Intro.html">Introduction</a>
+             </li>
+             <li>
+               <a href="Overall.html">Overall Description</a>
+             </li>
+             <a href="External.html">External Interface Requirements</a>
+             <li>
+             <li>
+               <a href="System.html">System Features</a>
+             </li>
+             <li>
+               <a href="OthersReq.html">Other Nonfunctional Requirements</a>
+             </li>
+             <li>
+               <a href="AppendixSection.html">Appendix</a>
+             </li>
+           </ul>
+         </li>
+
+
+       </ul>
+     </nav>
+
+
+    <div id="content">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button type="button" id="sidebarCollapse" class="btn  btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+
+      </button>
+    </div>
+      </nav>
+
+<section class="bg-light">
+  <article class="py-3 ">
+    <div>
+
+      <h3 style="text-align:left">2.  Overall Description</h3>
+      <br>
+
+
+
+      <h5 style="text-align:left"><ul><li><strong>2.1 Product Perspective </strong> </li></ul></h5>
+      <p style="text-align:left text-secondary" >
+        To-let is a GPS-Web-based house renting solution, where any needful user can easily find their rentable house/flat in desired location.
+         There are other websites which are already providing house rent solutions, so how To-let is differed to them.
+          To-let give the users to see exactly where the desired home/flat is, and with a map view, he /she can easily find the destination details.
+           It also provide a mobile application by which, a user can just open an app, through camera, gyroscope, GPS sensors and with the
+            help of third-party API, he/she can easily see that,
+            if there is any rentable home near him/her and get all the important details. Which makes User life easier when he/she is looking for a home for rent.
+             It also uses data of renowned sites like Bikroy or bdproperty etc. by web scrapping. Users can also give ads to give rent their houses/flats etc.
+            </p>
+
+      <p style="text-align:left">The following information that are included in To-let:
+        <br>
+
+1)	Customer Detail: This system will have customer detail like: name, phone, email, address etc.,
+       who is going to give ads of their home and also those customer who comes here for finding homes,
+        so that if the user tick some product (flat/house) as favorite, he/she can easily found that when he come back again and
+         also system can send some suggestion according to his/her need. It is not mandatory or need for a user who just looking
+         for houses for rent to give his/her information.
+         <br>
+2)	Map View: The user can see or can find his/her desired location houses in a map (Google map) which integrated with the help of third-party API.
+<br>
+3)	Houses List: Users will have a list of houses according to his/her search result, to find his/her rentable home easily.
+</p>
+
+<h5 style="text-align:left">Product Functions </strong> </h5>
+
+      <p style="text-align:left text-secondary" >
+     At first User have to search To-let URL or get the link from somewhere. When user click on the link,
+     user can see a welcome page. Where he/she can search/ browse to find rentable/sellable houses/flats/apartments etc.
+     If the user wants to give ads for rent, he/she need to sign up To-let. The user will have a user panel where he/she
+     can add or remove his/her ads. The user can log out anytime. Here, the admin can also sign in but can not register. Admin will also have a panel for him/her.
+     <br>
+     <br>To better understand a simplified user workflow diagram is given below.
+     </p>
+  <img src="workflow.jpg" alt="workflow diagram" >
+
+
+      <br>
+
+      <h5 style="text-align:left"><ul><li><strong>2.2 User Classes and Characteristics </strong> </li></ul></h5>
+      <p style="text-align:left">There are two types of user Classes in To-let. First one is admin and the next one is user. There are two types of user. One type
+      of user want to give ads to sell or rent their property and other type of user want to find a home for accommodation. User has no privilege to access in the database, but admin does.
+      Both user and admin can sign in, but sign up can only done by users. User can search home/apartment etc. and get their desired information that they are looking for.
+      <br>
+      <br>
+      A UML use case diagram is given below to show the activities done by user Classes.
+    </p>
+        <img src="use_case_diagram.jpg" alt="Use case diagram" >
+
+
+
+
+      <h5 style="text-align:left"><ul><li><strong>2.3 Operating Environment </strong></li></ul></h5>
+      <p style="text-align:left">
+          Because To-let is a web base system it’s Operating environment is independent but we also make To-let
+           for android user, so it need java for running the app.
+         </p>
+
+    <h5 style="text-align:left"><ul><li><strong>2.4 Design and Implementation Constraints </strong></li></ul></h5>
+    <br>
+          <p style="text-align:left">
+    1.Admin needs to check and update the database for new houses detail list by manually or by the help of integrated API.<br>
+2.Users devices having the system (Website/app) must be connected via WIFI or Mobile Data.<br>
+3.Users devices must have a GPS system in built. (For android phones for searching in Argument Reality, user devices must have gyroscope, AI functionality).<br>
+4.User devices should have sufficient memories.<br>
+5.Users must search within Dhaka region to avoid uncertain issues, because for now it will work only in this region.
+</p>
+
+    <h5 style="text-align:left"><ul><li><strong>2.5 User Documentation </strong></li></ul></h5>
+    <p style="text-align:left">
+      N/A
+      </p>
+    <h5 style="text-align:left"><ul><li><strong>2.6	Assumptions and Dependencies </strong></li></ul></h5>
+
+<p style="text-align:left">
+    To-let is partially dependent on websites like bikroy/propertybd, for getting data.
+    To-let only works with data of Dhaka City for now.
+    Users may find difficulties in operating system like IOS/MacOS/Linux etc.
+  </p>
+
+
+
+
+
+    </div>
+  </article>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+</script>
+
+
+</body>
+</html>

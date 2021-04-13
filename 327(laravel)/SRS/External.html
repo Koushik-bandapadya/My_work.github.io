@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>External</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="wrapper">
+
+   <nav id="sidebar">
+
+     <div class="sidebar-header">
+      <a href="SRS.html"><h3>Home</h3></a>
+     </div>
+     <ul class="lisst-unstyled components">
+
+
+               <li class="active">
+                 <a href="#srsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SRS</a>
+                 <ul class="collapse list-unstyled" id="srsmenu">
+                   <li>
+                     <a href="Intro.html">Introduction</a>
+                   </li>
+                   <li>
+                     <a href="Overall.html">Overall Description</a>
+                   </li>
+                   <a href="External.html">External Interface Requirements</a>
+                   <li>
+                   <li>
+                     <a href="System.html">System Features</a>
+                   </li>
+                   <li>
+                     <a href="OthersReq.html">Other Nonfunctional Requirements</a>
+                   </li>
+                   <li>
+                     <a href="AppendixSection.html">Appendix</a>
+                   </li>
+                 </ul>
+               </li>
+
+
+
+     </ul>
+   </nav>
+
+
+  <div id="content">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button type="button" id="sidebarCollapse" class="btn  btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+
+      </button>
+    </div>
+      </nav>
+
+<section class="bg-light">
+  <article class="py-3 text-dark">
+    <div>
+
+      <h3 style="text-align:left">3. External Interface Requirements</h3>
+      <h5 style="text-align:left"><ul><li><strong>3.1 User Interface</strong> </li></ul></h5>
+      <p style="text-align:left">
+To-let is a web based application which will also run in android devices. For this application, we
+make some images with the help of adobe illustrator to show the Tolet's User Interfaces based on our initial work, use case diagram and working flow diagram.
+To-let's user interfaces given below:
+      <br>
+      <br> (1) To-let's home page. </p>
+      <img src="BBC_welcome_page.jpg">
+      <p>‏‏‎ ‎</p>
+      <p style="text-align:left">(2) To-let's sign up page.</p>
+      <img src="bbc_sign_up.jpg">
+      <p>‏‏‎ ‎</p>
+      <p style="text-align:left">(3) To-let's sign in page.</p>
+      <img src="bbc_sign_in.jpg">
+      <p>‏‏‎ ‎</p>
+      <p style="text-align:left">(4) To-let's admin panel</p>
+      <img src="BBC_admin_panel.jpg">
+      <p>‏‏‎ ‎</p>
+      <p style="text-align:left">(5) To-let's customer panel </p>
+      <img src="BBC_customer_panel.jpg">
+      <p>‏‏‎ ‎</p>
+
+      <h5 style="text-align:left"><ul><li><strong>3.2	Software Interfaces</strong> </li></ul></h5>
+      <p>
+To store the rentable/sellable houses details, we will need a database system. For To-let, we will be use a relational database
+system with XAMPP's mysql, php. We will be use lots of APIs for web scrapping, goople map integration etc. We will be generated new house details by web scrapping.
+The user will be submit their user info through the sign up form, which will help the user to give ads on To-let.
+The software interface is mainly divided into 3 parts- home page with search facilities, user panel and list of houses page.
+
+      </p>
+
+      <h5 style="text-align:left"><ul><li><strong>3.3	Hardware Interfaces</strong> </li></ul></h5>
+      <p> To-let application is going to run over the internet, all the hardware will be require to connect internet connection will be hardware interface for this application.
+        It is also work on mobile devices and uses AR and VR APIs.
+         <br>So, for To-let:  Modem, Ethernet Cross-Cable, WAN/LAN etc are required hardare as well GPS, gyroscope etc.
+      </p>
+
+      <h5 style="text-align:left"><ul><li><strong>3.4	Communications Interfaces</strong> </li></ul></h5>
+      <p>To-let home rental solution may use the HTTP/HTTPS protocol for communication over the internet.
+      </p>
+
+
+
+
+
+
+    </div>
+  </article>
+</section>
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+</script>
+
+
+</body>
+</html>

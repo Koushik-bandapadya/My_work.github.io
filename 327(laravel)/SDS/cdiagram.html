@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Diagram</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="wrapper">
+
+      <nav id="sidebar">
+
+        <div class="sidebar-header">
+         <a href="SDS.html"><h3>Home</h3></a>
+        </div>
+        <ul class="lisst-unstyled components">
+
+
+          <li class="active">
+            <a href="#sdsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SDS</a>
+            <ul class="collapse list-unstyled" id="sdsmenu">
+              <li>
+                <a href="Intro.html">Introduction</a>
+              </li>
+              <li>
+                <a href="Documentconventions.html">Document Conventions</a>
+              </li>
+              <a href="DDC.html">Description of Design Components</a>
+              <li>
+              <li>
+                <a href="Highlevelcomp.html">High-Level Component Design</a>
+              </li>
+              <li>
+                <a href="cdiagram.html">Class Diagrams</a>
+              </li>
+              <li>
+                <a href="ddesign.html">Database Design</a>
+              </li>
+        <li>
+                <a href="Implementation.html">Implementation plan</a>
+              </li>
+
+            </ul>
+          </li>
+
+
+        </ul>
+      </nav>
+     <div id="content">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="container-fluid">
+       <button type="button" id="sidebarCollapse" class="btn  btn-info">
+         <i class="fas fa-align-left"></i>
+         <span></span>
+
+       </button>
+     </div>
+
+       </nav>
+
+
+        <h1 style="text-align:left"><strong>Class Diagram </strong></li></h1>
+
+          <img src="" alt="" >
+          <img src="UML.jpg" class="img-fluid" alt="Responsive image">
+
+<h3 style="text-align:left"><strong>Detailed Class Diagram </strong></li></h3>
+
+<p>In the above, a simplified view of the model, view and controller
+   classes shown with UML class diagrams.
+   View classes have been clearly separated from the model and controller.
+   Controller exchanges data between
+    the model and view when using the User_Action class.
+   TO-LET_Viewer class is the viewer and User and House
+   are the model classes which holds data.</p>
+
+<h3 style="text-align:left"><strong>Detailed Class Description</strong></li></h3>
+
+<br>
+<ul><h3 style="text-align:left"><strong>1) Class: To_let_Viewer</strong></li></h3></ul>
+
+<p> <b>Purpose:</b>  It is an abstract class which hold the common attributes and methods of User Class.</p>
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+
+<p>1.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>1.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+
+<ul><h3 style="text-align:left"><strong>2) Class: User</strong></li></h3></ul>
+<p> <b>Purpose:</b> It is an abstract class which hold the common attributes and methods of admin & Subscribed_user Class.</p>
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+<p>2.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: user_id</th>
+  </tr>
+  <tr>
+    <td>Type : String</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the user and admin id's in string.</td>
+  </tr>
+</table>
+<br>
+<p>2.1.2</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: password</th>
+  </tr>
+  <tr>
+    <td>Type : String</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the user and admin password in string.</td>
+  </tr>
+</table>
+<br>
+<p>2.1.3</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: sign_in _status</th>
+  </tr>
+  <tr>
+    <td>Type : String</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the user and admin status in string.</td>
+  </tr>
+</table>
+<br>
+
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>2.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+
+<ul><h3 style="text-align:left"><strong>3) Class: House</strong></li></h3></ul>
+<p> <b>Purpose:</b> This House class hold the common attributes and methods of House Class.</p>
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+<p>3.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_id</th>
+  </tr>
+  <tr>
+    <td>Type : int</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house id in int.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.2</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_price</th>
+  </tr>
+  <tr>
+    <td>Type : int</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house price in int.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.3</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_area</th>
+  </tr>
+  <tr>
+    <td>Type : String</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house area in string.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.4</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_date</th>
+  </tr>
+  <tr>
+    <td>Type : date</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house advertisement date in date.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.5</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_size</th>
+  </tr>
+  <tr>
+    <td>Type : int</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house size in int.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.6</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_location</th>
+  </tr>
+  <tr>
+    <td>Type : GPS</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house location in GPS.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.7</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_floor</th>
+  </tr>
+  <tr>
+    <td>Type : int</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house floor number in int.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.8</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_side</th>
+  </tr>
+  <tr>
+    <td>Type : String</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house side in string.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.9</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_bed</th>
+  </tr>
+  <tr>
+    <td>Type : int</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the number of bedrooms of the house in int.</td>
+  </tr>
+</table>
+<br>
+<p>3.1.10</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house_bath</th>
+  </tr>
+  <tr>
+    <td>Type : int</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the number of bathrooms of the house in int.</td>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>3.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<ul><h3 style="text-align:left"><strong>4) Class: Search</strong></li></h3></ul>
+<p> <b>Purpose:</b> It is an abstract class which hold the common attributes and methods of Detail_Search and Map class.</p>
+
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+<p>4.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>4.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & return it's detail & also all similar its similar detail</td>
+  </tr>
+</table>
+<br>
+
+<ul><h3 style="text-align:left"><strong>5) Class: Detail_Search</strong></li></h3></ul>
+<p> <b>Purpose:</b> It is an abstract class which hold the common attributes and methods of Detail_Search class.</p>
+
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+<p>5.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>5.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & return it's detail & also all similar its similar detail</td>
+  </tr>
+</table>
+<br>
+
+<p>5.2.2</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_price</th>
+  </tr>
+  <tr>
+    <td>Parameter : price</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search by house price & return it's detail & also all similar its similar detail </td>
+  </tr>
+</table>
+<br>
+
+<p>5.2.3</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_date</th>
+  </tr>
+  <tr>
+    <td>Parameter : House_date</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description:  Search by house date & return it's detail & also all similar its similar detaill </td>
+  </tr>
+</table>
+<br>
+
+<p>5.2.4</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_size</th>
+  </tr>
+  <tr>
+    <td>Parameter : House_size</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house by size & return it's detail & also all similar its similar detaill </td>
+  </tr>
+</table>
+<br>
+
+<p>5.2.5</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_area</th>
+  </tr
+  <tr>
+    <td>Parameter : House_area</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house by area & return it's detail & also all similar its similar detail</td>
+  </tr>
+</table>
+<br>
+<p>5.2.6</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_floor</th>
+  </tr>
+  <tr>
+    <td>Parameter : floor</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search by house floor & return it's detail & also all similar its similar detail </td>
+  </tr>
+</table>
+<br>
+
+<p>5.2.7</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_side</th>
+  </tr>
+  <tr>
+    <td>Parameter : House_side</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description:  Search by house side & return it's detail & also all similar its similar detail </td>
+  </tr>
+</table>
+<br>
+
+<p>5.2.8</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_size</th>
+  </tr>
+  <tr>
+    <td>Parameter : House_bed</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house by bed number & return it's detail & also all similar its similar detail </td>
+  </tr>
+</table>
+<br>
+
+<p>5.2.9</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House_by_bath</th>
+  </tr
+  <tr>
+    <td>Parameter : House_bath</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house by bath & return it's detail & also all similar its similar detail</td>
+  </tr>
+</table>
+<br>
+
+<ul><h3 style="text-align:left"><strong>6) Class: Map</strong></li></h3></ul>
+<p> <b>Purpose:</b>This class hold all the common attributes and methods of Map class.</p>
+
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+<p>6.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>6.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_by_gps</th>
+  </tr>
+  <tr>
+    <td>Parameter : gps object</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & return it's detail & also all similar its similar detail</td>
+  </tr>
+</table>
+<br>
+<ul><h3 style="text-align:left"><strong>4) Class: Search</strong></li></h3></ul>
+<p> <b>Purpose:</b> It is an abstract class which hold the common attributes and methods of Detail_Search and Map class.</p>
+
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+<p>4.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>4.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & return it's detail & also all similar its similar detail</td>
+  </tr>
+</table>
+<br>
+</body><ul><h3 style="text-align:left"><strong>7) Class: Admin</strong></li></h3></ul>
+  <p> <b>Purpose:</b> This class hold it's attributes & it is a child class of User class.</p>
+
+  <h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+  <p>7.1.1</p>
+  <table style="width:100%">
+    <tr>
+      <th>Name: admin_name</th>
+    </tr>
+    <tr>
+      <td>Type : String</td>
+    </tr>
+    <tr>
+      <td>Purpose : Hold the admin name in string.</td>
+    </tr>
+  </table>
+  <br>
+  <p>7.1.2</p>
+  <table style="width:100%">
+    <tr>
+      <th>Name: admin_mail</th>
+    </tr>
+    <tr>
+      <td>Type : String</td>
+    </tr>
+    <tr>
+      <td>Purpose : Hold the admin email in string.</td>
+    </tr>
+  </table>
+  <br>
+  <h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+  <p>7.2.1</p>
+  <table style="width:100%">
+    <tr>
+      <th>n/a</th>
+    </tr>
+  </table>
+  <br>
+
+</body><ul><h3 style="text-align:left"><strong>8) Class: Subscribed_User</strong></li></h3></ul>
+  <p> <b>Purpose:</b> This class hold it's attributes & it is a child class of User class.</p>
+
+  <h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+  <p>8.1.1</p>
+  <table style="width:100%">
+    <tr>
+      <th>Name: user_name</th>
+    </tr>
+    <tr>
+      <td>Type : String</td>
+    </tr>
+    <tr>
+      <td>Purpose : Hold the user name in string.</td>
+    </tr>
+  </table>
+  <br>
+  <p>8.1.2</p>
+  <table style="width:100%">
+    <tr>
+      <th>Name: user_mail</th>
+    </tr>
+    <tr>
+      <td>Type : String</td>
+    </tr>
+    <tr>
+      <td>Purpose : Hold the user email in string.</td>
+    </tr>
+  </table>
+  <br>
+  <p>8.1.3</p>
+  <table style="width:100%">
+    <tr>
+      <th>Name: user_phone</th>
+    </tr>
+    <tr>
+      <td>Type : int</td>
+    </tr>
+    <tr>
+      <td>Purpose : Hold the user phone number in int.</td>
+    </tr>
+  </table>
+  <br>
+  <h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+  <p>8.2.1</p>
+  <table style="width:100%">
+    <tr>
+      <th>n/a</th>
+    </tr>
+  </table>
+  <br>
+
+ <ul><h3 style="text-align:left"><strong>9) Class: Delete_House</strong></li></h3></ul>
+<p> <b>Purpose:</b> This class which hold the common attributes and methods of Delete_House class & it's main
+  objective is to delete the house object  .</p>
+  <p>9.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>9.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Delete_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: bool</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & delete it. </td>
+  </tr>
+</table>
+<br>
+
+ <ul><h3 style="text-align:left"><strong>10) Class: Modify_House</strong></li></h3></ul>
+<p> <b>Purpose:</b> This class which hold the common attributes and methods of Modify_House class.</p>
+  <p>10.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>10.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Modify_House</th>
+  </tr>
+  <tr>
+    <td>Parameter :House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & modify it's detail</td>
+  </tr>
+</table>
+<br>
+
+ <ul><h3 style="text-align:left"><strong>11) Class: Update_House</strong></li></h3></ul>
+<p> <b>Purpose:</b> This class which hold the common attributes and methods of Update_House class.</p>
+  <p>11.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>11.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Update_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house & Update it's detail</td>
+  </tr>
+</table>
+<br>
+
+ <ul><h3 style="text-align:left"><strong>12) Class: GPS</strong></li></h3></ul>
+<p> <b>Purpose:</b> This class hold the common attributes and methods of GPS class.</p>
+  <p>12.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>12.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>n/a</th>
+  </tr>
+</table>
+<br>
+<ul><h3 style="text-align:left"><strong>13) Class: Ads</strong></li></h3></ul>
+<p> <b>Purpose:</b> This class hold the common attributes and methods of Update_House class.</p>
+ <p>13.1.1</p>
+<table style="width:100%">
+ <tr>
+   <th>n/a</th>
+ </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>13.2.1</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house</th>
+ </tr>
+ <tr>
+   <td>Parameter : House</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+<p>13.2.2</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_id</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_id</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_id in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+<p>13.2.3</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_price</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_price</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_price in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+<p>13.2.4</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_area</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_area</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_area in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+<p>13.2.5</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_location</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_location</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_location in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+<p>13.2.6</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_floor</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_floor</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_floor in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+
+<p>13.2.7</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_side</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_side</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_side in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+<p>13.2.8</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_bed</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_bed</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_bed in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+<p>13.2.9</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house_bath</th>
+ </tr>
+ <tr>
+   <td>Parameter : house_bath</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house_bath in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+
+<ul><h3 style="text-align:left"><strong>14) Class: Sign_in</strong></li></h3></ul>
+<p> <b>Purpose:</b> This class which hold the common attributes and methods of Sign_in class & it's main
+ objective is to login to the website.</p>
+ <p>14.1.1</p>
+<table style="width:100%">
+ <tr>
+   <th>n/a</th>
+ </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>14.2.1</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: sign_in</th>
+ </tr>
+ <tr>
+   <td>Parameter : user_name,password</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: Sign in to the website. </td>
+ </tr>
+</table>
+<br>
+<ul><h3 style="text-align:left"><strong>15) Class: Sign_up</strong></li></h3></ul>
+<p> <b>Purpose:</b> This class which hold the common attributes and methods of Sign_up class & it's main
+ objective is to register to the website.</p>
+ <p>15.1.1</p>
+ <table style="width:100%">
+   <tr>
+     <th>n/a</th>
+   </tr>
+ </table>
+ <br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>15.2.1</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: sign_up</th>
+ </tr>
+ <tr>
+   <td>Parameter : user_name,password,phone</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: Registration to the website. </td>
+ </tr>
+</table>
+<br>
+
+<ul><h3 style="text-align:left"><strong>16) Class: User_Action</strong></li></h3></ul>
+<p> <b>Purpose:</b> It is an abstract class which hold the common attributes and methods of User_Action.</p>
+<h5 style="text-align:left"><li><strong>Attributes</strong></li></h5>
+<p>16.1.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: house</th>
+  </tr>
+  <tr>
+    <td>Type : House</td>
+  </tr>
+  <tr>
+    <td>Purpose : Hold the house object in House.</td>
+  </tr>
+</table>
+<br>
+<h5 style="text-align:left"><li><strong>Methods</strong></li></h5>
+<p>16.2.1</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Delete_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: bool</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & delete it. </td>
+  </tr>
+</table>
+<br>
+<p>16.2.2</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Modify_House</th>
+  </tr>
+  <tr>
+    <td>Parameter :House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & modify it's detail</td>
+  </tr>
+</table>
+<br>
+<br>
+<p>16.2.3</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Update_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house & Update it's detail</td>
+  </tr>
+</table>
+<br>
+<p>16.2.4</p>
+<table style="width:100%">
+ <tr>
+   <th>Name: ad_house</th>
+ </tr>
+ <tr>
+   <td>Parameter : House</td>
+ </tr>
+ <tr>
+   <td>Return Type: bool</td>
+ </tr>
+ <tr>
+   <td>Description: add house in House object & Update it's detail</td>
+ </tr>
+</table>
+<br>
+<p>16.2.5</p>
+<table style="width:100%">
+  <tr>
+    <th>Name: Search_House</th>
+  </tr>
+  <tr>
+    <td>Parameter : House</td>
+  </tr>
+  <tr>
+    <td>Return Type: House</td>
+  </tr>
+  <tr>
+    <td>Description: Search house object & return it's detail & also all similar its similar detail</td>
+  </tr>
+</table>
+<br>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+
+  $(document).ready(function () {
+              $('#sidebarCollapse').on('click', function () {
+                  $('#sidebar').toggleClass('active');
+              });
+          });
+
+  </script>
+
+  </html>

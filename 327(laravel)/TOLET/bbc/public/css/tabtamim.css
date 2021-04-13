@@ -1,0 +1,50 @@
+table, th, td {
+    border: 1px solid black;
+  }
+  table {
+    width: 100%;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  table {
+    border: 1px solid black;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  tr:nth-child(even) {background: linear-gradient(to right, #07c1e2a2 0%, #0062ffd3 28%, #515247c9 91%, #f1172ac4 100%);}
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: rgb(224, 12, 12);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+  }
+  input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  input[type=text] {
+    background-color: #000000d3;
+    color: rgb(255, 255, 255);
+  }
+  input[type=text] {
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 30%;
+  }
+  

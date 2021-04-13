@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Other Nonfunctional Requirements</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+
+ <nav id="sidebar">
+
+   <div class="sidebar-header">
+
+    <a href="SRS.html"><h3>Home</h3></a>
+   </div>
+   <ul class="lisst-unstyled components">
+
+
+     <li class="active">
+       <a href="#srsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SRS</a>
+       <ul class="collapse list-unstyled" id="srsmenu">
+         <li>
+           <a href="Intro.html">Introduction</a>
+         </li>
+         <li>
+           <a href="Overall.html">Overall Description</a>
+         </li>
+         <a href="External.html">External Interface Requirements</a>
+         <li>
+         <li>
+           <a href="System.html">System Features</a>
+         </li>
+         <li>
+           <a href="OthersReq.html">Other Nonfunctional Requirements</a>
+         </li>
+         <li>
+           <a href="AppendixSection.html">Appendix</a>
+         </li>
+       </ul>
+     </li>
+
+   </ul>
+ </nav>
+
+
+<div id="content">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button type="button" id="sidebarCollapse" class="btn  btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+
+      </button>
+    </div>
+      </nav>
+
+
+
+
+<section class="bg-light">
+  <article class="py-3 text-dark">
+    <div>
+
+      <h3 style="text-align:left">5. Other Nonfunctional Requirements</h3>
+      <h5 style="text-align:left">5.1 Performance Requirements</h5>
+      <p style="text-align:left">TO-LET (our project) must be active and responsive 24/7. Any request must be processed within 3 seconds. Our site should be loaded or browsed or refreshed within 2 seconds. Any sort of error must be handled within 2 seconds. For opening, sorting, computing, posting of rentable or sellable house lists or any other files must be done within 2 seconds.</p>
+
+      <h5 style="text-align:left">5.2 Safety Requirements</h5>
+      <p>If there is any extensive damage to a wide portion of the database due to catastrophic failure, such as a disk crash, all the user information and uploaded files are saved in the archived database for a backup and the recovery method restores a past copy of the database for safety purpose. </p>
+
+      <h5 style="text-align:left">5.3 Security Requirements</h5>
+      <p>For our system, password of a user should be at least 8 characters long containing at least one uppercase and a numerical value. For external communications between the system’s data server and clients must be encrypted. User information must be kept confidential.</p>
+
+      <h5 style="text-align:left">5.4 Software Quality Attributes</h5>
+<p>
+  N/A
+</p>
+
+      <h5 style="text-align:left">5.5 Business Rules</h5>
+      <p>If the internet connection of a user gets disrupted while sending information or an unintentional log out occurs then the information can be sent again for verification. </p>
+
+
+
+
+    </div>
+  </article>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+</script>
+
+
+</body>
+</html>

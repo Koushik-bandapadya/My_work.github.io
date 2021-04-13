@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Description of Design Components</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+
+     <nav id="sidebar">
+
+       <div class="sidebar-header">
+        <a href="SDS.html"><h3>Home</h3></a>
+       </div>
+       <ul class="lisst-unstyled components">
+
+
+         <li class="active">
+           <a href="#sdsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SDS</a>
+           <ul class="collapse list-unstyled" id="sdsmenu">
+             <li>
+               <a href="Intro.html">Introduction</a>
+             </li>
+             <li>
+               <a href="Documentconventions.html">Document Conventions</a>
+             </li>
+             <a href="DDC.html">Description of Design Components</a>
+             <li>
+             <li>
+               <a href="Highlevelcomp.html">High-Level Component Design</a>
+             </li>
+             <li>
+               <a href="cdiagram.html">Class Diagrams</a>
+             </li>
+             <li>
+               <a href="ddesign.html">Database Design</a>
+             </li>
+       <li>
+               <a href="Implementation.html">Implementation plan</a>
+             </li>
+
+           </ul>
+         </li>
+
+
+       </ul>
+     </nav>
+    <div id="content">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button type="button" id="sidebarCollapse" class="btn  btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+
+      </button>
+    </div>
+
+      </nav>
+
+
+      
+      <br>
+      <section class="bg-lite">
+  <article class="py-3 text-dark">
+    <div>
+
+      <h3 style="text-align:left">3. Description of Design Components:</h3>
+
+      <p style="text-align:left"> The TO-LET service mainly consists of three major components, namely Front end, Back end and API.</p>
+	
+	   <p style="text-align:left"> <strong>  Client side: </strong><br></p>
+
+      <p style="text-align:left">•	The user component explains about how the client is going to deal with the site, how it’s going to work, what information the user has to provide in terms of accessing the site. <br></p>
+      <p style="text-align:left">•	Once a customer searches the TO-LET site they will be provided with a log in page. They have to insert the username and password for authentication and can only enter the site once the access is accepted. Sign up option is also there for a new user. <br></p>
+
+      <p style="text-align:left">•	All the information provided by a user will be archived by the admin by a control panel. </p><br>
+
+      <p style="text-align:left">•	A user logged in into the site can see the available advertisements of properties. 
+	  They can post an advertisement and can also search categorically. A map view can also be achieved to see any available properties near the customer. </p><br>
+       <p style="text-align:left"> <strong>  Server side: </strong><br></p>
+	   <p style="text-align:left">•	The system will set the advertisements in categories, it will search for the items searched by the user in the library and show results,
+	   it will show a map view if the user desires (using API). </p><br>
+	   <p style="text-align:left">•	The system will make an entry for every individual user in the library and recognize them for safety purpose and will cross match it once a user tries to log in for the sake of verification.  </p><br>
+
+     
+
+    
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      
+
+    
+
+  </article>
+</section>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+</script>
+
+
+</body>
+</html>

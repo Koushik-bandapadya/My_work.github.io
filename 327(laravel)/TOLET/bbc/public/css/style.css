@@ -1,0 +1,141 @@
+body {
+	font-family: Arial;
+	padding: 20px;
+	
+	
+  }
+  
+  .big-banner{
+	  
+  }
+  /* Header/Blog Title */
+  .header {
+	padding: 30px;
+	font-size: 30px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.671);
+	color: rgb(20, 36, 177);
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+	float: left;
+	width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+	background-color: rgb(237 68 68 / 69%);
+	padding: 20px;
+	margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+	  width: 100%;
+	  padding: 0;
+	}
+  }
+/* Add a black background color to the top navigation */
+.topnav {
+	
+	background: linear-gradient(to right, #07c1e2a2 0%, #0062ffd3 28%, #ff4b5ac9 91%, #f1172ac4 100%);
+	overflow: hidden;
+  }
+  /* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: #0059ff49;
+	color: white;
+  }
+  .footer {
+	padding: 50px;
+	font-size: 15px;
+	text-align: center;
+	background: linear-gradient(to right, #2c53d5b6 0%, #2c6dd59f 28%, #ff4b5aa2 91%, #deff4b79 100%);
+	color: rgb(255, 255, 255);
+  }
+ /* Style all font awesome icons */
+/* .fa {
+	padding: 90px;
+	font-size: 100px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+  } */
+  input,
+  .btn {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 20px;
+	margin: 8px 0;
+	opacity: 0.85;
+	display: inline-block;
+	font-size: 17px;
+	line-height: 20px;
+	text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+	opacity: 0.7;
+  }
+  
+  /* add appropriate colors to fb and google buttons */
+  .fb {
+	background-color: #1d58d6;
+	color: white;
+  }
+
+  .google {
+	background-color: #dd4b39;
+	color: white;
+  }
+  

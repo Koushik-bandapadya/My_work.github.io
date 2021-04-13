@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database Design</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="wrapper">
+
+      <nav id="sidebar">
+
+        <div class="sidebar-header">
+         <a href="SDS.html"><h3>Home</h3></a>
+        </div>
+        <ul class="lisst-unstyled components">
+
+
+          <li class="active">
+            <a href="#sdsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SDS</a>
+            <ul class="collapse list-unstyled" id="sdsmenu">
+              <li>
+                <a href="Intro.html">Introduction</a>
+              </li>
+              <li>
+                <a href="Documentconventions.html">Document Conventions</a>
+              </li>
+              <a href="DDC.html">Description of Design Components</a>
+              <li>
+              <li>
+                <a href="Highlevelcomp.html">High-Level Component Design</a>
+              </li>
+              <li>
+                <a href="cdiagram.html">Class Diagrams</a>
+              </li>
+              <li>
+                <a href="ddesign.html">Database Design</a>
+              </li>
+ 			 <li>
+                <a href="Implementation.html">Implementation plan</a>
+              </li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </nav>
+     <div id="content">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="container-fluid">
+       <button type="button" id="sidebarCollapse" class="btn  btn-info">
+         <i class="fas fa-align-left"></i>
+         <span></span>
+
+       </button>
+     </div>
+
+       </nav>
+
+
+       <h2 style="text-align:left"><ul><strong> ER Diagram </strong></ul></h2>
+         <img src="ER.jpg" class="img-fluid" alt="Responsive image">
+
+  <img src="" alt="" >
+ <h5 style="text-align:left"><ul><li><strong> ER Diagram </strong></li></ul></h5>
+ <p style="text-align:left text-secondary" >
+ A database is an organized collection of data, generally stored
+  and accessed electronically from a computer system.
+  In above we show our Project TO-LET (Basha Bhara Chai) Entity Relationship Diagram.
+ </p>
+ <h4>List Of Tables</h4>
+  <li>User</li>
+  <li>Admin</li>
+  <li>House</li>
+  <li>HouseArea</li>
+<br>
+<h4><ul>Table: User </ul></h4>
+  <table style="width:100%">
+    <tr>
+      <th>Attribute</th>
+      <th>DataType</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>int</td>
+      <td>Id of User table (Primary key)</td>
+    </tr>
+    <tr>
+      <td>user_name</td>
+      <td>varchar(50)</td>
+      <td>user_name of User name which hold user name
+        and it is also used to log in to TO-LET.</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>varchar(50)</td>
+      <td>password is user password to login in to TO-LET</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>varchar(50)</td>
+      <td>email is user mail which hold user mailing address</td>
+    </tr>
+    <tr>
+      <td>sign_in_status</td>
+      <td>varchar(50)</td>
+      <td>It will show user is log in or not</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>int</td>
+      <td>phone will hold user phone number</td>
+    </tr>
+  </table>
+<br>
+<h4><ul>Table: Houses </ul></h4>
+  <table style="width:100%">
+    <tr>
+      <th>Attribute</th>
+      <th>DataType</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>int</td>
+      <td>Id of Houses table (Primary key)</td>
+    </tr>
+    <tr>
+      <td>house_price</td>
+      <td>int</td>
+      <td>house_price is hold houses rent etc value  </td>
+    </tr>
+    <tr>
+      <td>house_area</td>
+      <td>varchar(50)</td>
+      <td>house_area hold all the area where house located </td>
+    </tr>
+    <tr>
+      <td>house_size</td>
+      <td>int</td>
+      <td>house_size hold the house sqft area </td>
+    </tr>
+    <tr>
+      <td>house_floor</td>
+      <td>int</td>
+      <td>house floor hold ,which floor the house is rent for.</td>
+    </tr>
+    <tr>
+      <td>house_side</td>
+      <td>varchar(50)</td>
+      <td>house_side provide which side the house is facing</td>
+    </tr>
+    <tr>
+      <td>house_bed</td>
+      <td>int</td>
+      <td>house_bed hold number of bed, the house has </td>
+    </tr>
+    <tr>
+      <td>house_bath</td>
+      <td>int</td>
+      <td>house_bath hold number of bath, the house has.</td>
+    </tr>
+  </table>
+  <br>
+  <h4><ul>Table: Admin </ul></h4>
+    <table style="width:100%">
+      <tr>
+        <th>Attribute</th>
+        <th>DataType</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td>int</td>
+        <td>Id of Admin table (Primary key)</td>
+      </tr>
+      <tr>
+        <td>admin_name</td>
+        <td>varchar(50)</td>
+        <td>admin_name of admin name which hold user name
+          and it is also used to log in to TO-LET.</td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td>varchar(50)</td>
+        <td>password is user password to login in to TO-LET</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>varchar(50)</td>
+        <td>email is user mail which hold user mailing address</td>
+      </tr>
+    </table>
+    <br>
+    <h4><ul>Table: House_Area </ul></h4>
+      <table style="width:100%">
+        <tr>
+          <th>Attribute</th>
+          <th>DataType</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>id</td>
+          <td>int</td>
+          <td>Id of House_Area table (Primary key)</td>
+        </tr>
+        <tr>
+          <td>user_id</td>
+          <td>int</td>
+          <td>This user_id is the the foreign key of from User table 'id'.
+            It connects the relation with User table to House_Area table. </td>
+        </tr>
+        <tr>
+          <td>house_id</td>
+          <td>int</td>
+          <td>This user_id is the the foreign key of from House table 'id'.
+             It connects the relation with House table to House_Area table.</td>
+        </tr>
+
+        <tr>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+
+  $(document).ready(function () {
+              $('#sidebarCollapse').on('click', function () {
+                  $('#sidebar').toggleClass('active');
+              });
+          });
+
+  </script>
+
+
+  </body>
+  </html>
